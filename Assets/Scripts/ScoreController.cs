@@ -9,6 +9,9 @@ public class ScoreController : MonoBehaviour
     public int scoreHighlightRange;
     public CharacterSoundController sound;
 
+    [Header("Collectible Reward")]
+    public GameObject freezeSkillCol;
+
     private int lastScoreHighlight = 0;
     private int currentScore;
     // Start is called before the first frame update
@@ -32,6 +35,7 @@ public class ScoreController : MonoBehaviour
         currentScore += increment;
         if (currentScore - lastScoreHighlight > scoreHighlightRange)
         {
+            freezeSkillCol.SetActive(true);
             sound.PlayScoreHighlight();
             lastScoreHighlight += scoreHighlightRange;
         }

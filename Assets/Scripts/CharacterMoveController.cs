@@ -50,7 +50,7 @@ public class CharacterMoveController : MonoBehaviour
         }
         anim.SetBool("isOnGround", isOnGround);
         int distancePassed = Mathf.FloorToInt(transform.position.x - lastPositionX);
-        Debug.Log(lastPositionX);
+        // Debug.Log(lastPositionX);
         int scoreIncrement = Mathf.FloorToInt(distancePassed / scoringRatio);
 
         if (scoreIncrement > 0)

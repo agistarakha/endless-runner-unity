@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
+  - Ice
   - Ground
-  - 
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ice
+    uniqueID: 2754795511
+    locked: 0
+  - name: Ground
+    uniqueID: 3296246945
     locked: 0
